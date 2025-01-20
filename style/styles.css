@@ -1,117 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#frame-1{
+
+/* Base Styles */
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#frame-1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(0deg, #090909 0%, rgba(16, 16, 16, 0) 100%),url("../assets/hero-bg.png");
+    background: linear-gradient(0deg, #090909 0%, rgba(16, 16, 16, 0) 100%), url("../assets/hero-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 735px;
-    
 }
-#frame-1 .cont-frame1{
+
+#frame-1 .cont-frame1 {
     width: 818px;
 }
-#frame-1 .cont-frame1 .p1{
-    opacity: 0.80; 
-    text-align: center; 
-    color: white; 
-    font-size: 25px; 
-    font-family: Work Sans; 
-    font-weight: 600; 
+
+#frame-1 .cont-frame1 .p1 {
+    opacity: 0.80;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
     word-wrap: break-word;
     margin-top: 12px;
 }
-#frame-1 .cont-frame1 .head{
-    width: 100%; 
-    text-align: center; 
-    color: white; 
-    font-size: 51px; 
-    font-family: Work Sans; 
-    font-weight: 700; 
-    line-height: 64px; 
+
+#frame-1 .cont-frame1 .head {
+    text-align: center;
+    color: white;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 64px;
     word-wrap: break-word;
     margin-top: 12px;
 }
-#frame-1 .cont-frame1 .p2{
-    width: 100%; 
-    opacity: 0.70; 
-    text-align: center; 
-    color: white; 
-    font-size: 14px; 
-    font-family: Work Sans; 
-    font-weight: 500; 
-    line-height: 22px; 
+
+#frame-1 .cont-frame1 .p2 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    opacity: 0.70;
+    font-weight: 500;
+    line-height: 22px;
     word-wrap: break-word;
-    margin-top: 12px;   
+    margin-top: 12px;
 }
-.btn-cont{
+
+.btn-cont {
     text-align: center;
     margin-top: 12px;
 }
-.btn{
+
+.btn {
     padding: 12px;
     background-color: #52C303;
     color: whitesmoke;
     font-size: 16px;
     border: none;
     border-radius: 2px;
-
-    
+    cursor: pointer;
 }
-.cardbox{
+
+.btn:hover {
+    background-color: lightsalmon;
+}
+
+.cardbox {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 1222px;
     text-align: center;
-    
 }
-.cardbox .cardbox-cont{
+
+.cardbox .cardbox-cont {
     width: 818px;
 }
-.cardbox .cardbox-cont .card-cont1 .card-p1{
-    opacity: .60;
+
+.cardbox .cardbox-cont .card-cont1 .card-p1 {
+    opacity: 0.60;
     font-size: 19px;
     font-weight: 500;
     word-wrap: break-word;
     margin-bottom: 13px;
 }
-.cardbox .cardbox-cont .card-cont1 .cont-h3{
+
+.cardbox .cardbox-cont .card-cont1 .cont-h3 {
     font-size: 38px;
     font-weight: 700;
     line-height: 51px;
     word-wrap: break-word;
     margin-bottom: 38px;
 }
+
 .card-cont2 {
     border-radius: 16px;
     display: flex;
-    
 }
-.card-cont2 .dis{
-       margin-top: 19px;
-       margin-bottom: 19px;
-       font-size: 32px;
-       font-weight: 600;
-       word-wrap: break-word;
+
+.card-cont2 .dis {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    font-size: 32px;
+    font-weight: 600;
+    word-wrap: break-word;
 }
-.card-cont2 .f-cont{
+
+.card-cont2 .f-cont {
     font-size: 14px;
     opacity: 0.7;
     font-weight: 500;
     line-height: 22px;
     word-wrap: break-word;
     margin: 0px 5px;
-
 }
-.btn-food{
+
+.btn-food {
     margin-top: 25px;
     padding: 8px 25px;
     background-color: rgba(82, 195, 3, 0.15);
@@ -119,13 +135,14 @@
     border-radius: 8px;
     font-size: 19px;
     font-weight: 600;
-    word-wrap: break-word;
-
+    cursor: pointer;
 }
-.btn-food:hover{
+
+.btn-food:hover {
     background-color: lightsalmon;
 }
-.cardbox-cont .w-btn{
+
+.cardbox-cont .w-btn {
     background-color: #52C303;
     padding: 8px 25px;
     border: none;
@@ -136,42 +153,28 @@
     word-wrap: break-word;
     color: #FFFFFF;
 }
-.cardbox-cont .w-btn:hover{
+
+.cardbox-cont .w-btn:hover {
     background-color: lightsalmon;
 }
 
-/* .about{
-    height: 671px;
-    display: flex;
-    align-items: center;
-    gap: 63px;
-    border: 2px solid black;
-    
-
-}
-.about .about-1 img{
-    height: 480px;
-    width: 100%;
-}
-.about-2{
-    text-align: center;
-    
-} */
- .about{
+.about {
     display: flex;
     align-items: center;
     gap: 62px;
     padding: 25px 0px;
- }
- .about .img-1{
+}
+
+.about .img-1 {
     width: 50%;
-    
- }
- .about .img-1 img{
-    width:100%; 
-    height:100%;
- }
- .about .cont-about{
+}
+
+.about .img-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .cont-about {
     width: 50%;
     text-align: center;
     background-image: url("../assets/social-bg.png");
@@ -179,33 +182,94 @@
     background-repeat: none;
     background-size: cover;
     padding: 25px;
- }
- .about .cont-about h2{
+}
+
+.about .cont-about h2 {
     font-size: 38px;
     font-weight: 700;
     line-height: 51px;
     margin-bottom: 19px;
+}
 
- }
- .about .cont-about .p-ab1{
+.about .cont-about .p-ab1 {
     font-size: 19px;
-    opacity: .60;
+    opacity: 0.60;
     font-weight: 500;
     word-wrap: break-word;
     margin-bottom: 38px;
- }
- .about .cont-about .p-ab2{
-    opacity: .70;
+}
+
+.about .cont-about .p-ab2 {
+    opacity: 0.70;
     font-size: 26px;
     font-weight: 600;
     word-wrap: break-word;
     margin-bottom: 26px;
+}
 
-
- }
-.about .cont-about .icon img{
+.about .cont-about .icon img {
     margin: 0px 26px;
     height: 40px;
     width: 40px;
-    
+}
+
+/* Responsive Styles */
+
+/* Small Devices (< 768px) */
+@media (max-width: 767px) {
+    #frame-1 {
+        height: auto;
+        padding: 20px;
+    }
+    #frame-1 .cont-frame1 {
+        width: 100%;
+        padding: 0 10px;
+    }
+    #frame-1 .cont-frame1 .head {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    #frame-1 .cont-frame1 .p1, #frame-1 .cont-frame1 .p2 {
+        font-size: 14px;
+    }
+
+    .cardbox {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .cardbox .cardbox-cont {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .card-cont2 .dis {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+    .about .img-1,
+    .about .cont-about {
+        width: 100%;
+    }
+    .about .cont-about h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .about .cont-about .p-ab1, .about .cont-about .p-ab2 {
+        font-size: 16px;
+    }
+    .about .cont-about .icon img {
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+    }
+
+    .btn, .btn-food, .cardbox-cont .w-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
